@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmenati LLC | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Carmenati LLC</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#company-formation">Company Formation</a></li>
+                        <li><a href="services.html#financial-services">Financial Services</a></li>
+                        <li><a href="services.html#credit-management">Credit Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="lang-toggle">ES</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-content fade-in">
+            <h1>Carmenati LLC</h1>
+            <p>Business Consulting Reimagined. Bilingual. Bold. Built for You.</p>
+            <a href="services.html" class="cta-button">Explore Services</a>
+        </div>
+    </header>
+
+    <section class="upload-section slide-up">
+        <h2>Upload a Document</h2>
+        <p>Securely send us your business documents or case files.</p>
+        <input type="file" id="upload-input">
+        <div id="upload-preview"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

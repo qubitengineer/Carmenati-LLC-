@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Carmenati LLC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Carmenati LLC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#company-formation">Company Formation</a></li>
+                        <li><a href="services.html#financial-services">Financial Services</a></li>
+                        <li><a href="services.html#credit-management">Credit Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><button id="lang-toggle">ES</button></li>
+            </ul>
+        </nav>
+        <div class="hero-content fade-in">
+            <h1 data-en="Contact Us" data-es="Contáctenos">Contact Us</h1>
+        </div>
+    </header>
+
+    <section class="upload-section slide-up">
+        <h2 data-en="Get in Touch" data-es="Póngase en contacto">Get in Touch</h2>
+
+        <div class="service">
+            <h3 data-en="David Carmenate" data-es="David Carmenate">David Carmenate</h3>
+            <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615028541">561-502-8541</a></p>
+            <p><strong>Email</strong>: <a href="mailto:davidmagdel@gmail.com">davidmagdel@gmail.com</a></p>
+        </div>
+
+        <div class="service">
+            <h3 data-en="Magdel Carmenate" data-es="Magdel Carmenate">Magdel Carmenate</h3>
+            <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615020069">561-502-0069</a></p>
+            <p><strong>Email</strong>: <a href="mailto:daniel980322.mc@gmail.com">daniel980322.mc@gmail.com</a></p>
+        </div>
+
+        <h3 data-en="Upload a File" data-es="Subir un archivo">Upload a File</h3>
+        <p data-en="Send us relevant documents securely." data-es="Envíenos documentos relevantes de forma segura.">Send us relevant documents securely.</p>
+        <input type="file" id="upload-input">
+        <div id="upload-preview"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
