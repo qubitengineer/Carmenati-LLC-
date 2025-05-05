@@ -4,138 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Carmenati LLC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
+    <nav class="navbar">
+         <div class="navbar-content">
             <div class="logo">Carmenati LLC</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                 <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a></li>
                 <li class="dropdown">
-                    <a href="services.html" class="active">Services</a>
+                    <a href="services.html" class="active" data-en="Services" data-es="Servicios">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#company-formation">Company Formation</a></li>
-                        <li><a href="#financial-services">Financial Services</a></li>
-                        <li><a href="#credit-management">Credit Management</a></li>
+                        <li><a href="services.html#company-formation-card" data-en="Company Formation" data-es="Creación de Empresas">Company Formation</a></li>
+                        <li><a href="services.html#financial-services-card" data-en="Financial Services" data-es="Servicios Financieros">Financial Services</a></li>
+                        <li><a href="services.html#credit-management-card" data-en="Credit Management" data-es="Gestión de Crédito">Credit Management</a></li>
+                        <li><a href="services.html#legal-advisory-card" data-en="Legal Advisory" data-es="Asesoría Legal">Legal Advisory</a></li>
+                        <li><a href="services.html#tax-compliance-card" data-en="Tax Compliance" data-es="Cumplimiento Fiscal">Tax Compliance</a></li>
+                        <li><a href="services.html#real-estate-advisory-card" data-en="Real Estate Advisory" data-es="Asesoría Inmobiliaria">Real Estate Advisory</a></li>
+                        <li><a href="services.html#accounting-services-card" data-en="Accounting Services" data-es="Servicios de Contabilidad">Accounting Services</a></li>
+                        <li><a href="services.html#investment-planning-card" data-en="Investment Planning" data-es="Planificación de Inversiones">Investment Planning</a></li>
+                        <li><a href="services.html#project-planning-card" data-en="Project Planning" data-es="Planificación de Proyectos">Project Planning</a></li>
+                        <li><a href="services.html#additional-services-card" data-en="Additional Services" data-es="Servicios Adicionales">Additional Services</a></li>
+                        <li><a href="services.html#immigration-services-card" data-en="Immigration Services" data-es="Servicios de Inmigración">Immigration Services</a></li>
+                        <li><a href="services.html#notary-services-card" data-en="Notary Public Services" data-es="Servicios de Notario Público">Notary Public Services</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
                 <li><button id="lang-toggle">ES</button></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="hero-content fade-in">
             <h1 data-en="Our Services" data-es="Nuestros Servicios">Our Services</h1>
         </div>
     </header>
 
-    <section class="upload-section slide-up">
-        <div class="service" id="company-formation">
-            <h2>1. Company Formation</h2>
-            <ul>
-                <li>Business structure selection (LLC, Corporation, Partnership, etc.)</li>
-                <li>Registration and compliance with local, state, and federal regulations</li>
-                <li>Drafting and filing of incorporation documents</li>
-                <li>Obtaining necessary licenses and permits</li>
-            </ul>
-        </div>
+    <main class="services-page-content slide-up">
+        <section class="services-intro">
+             <p data-en="At Carmenati LLC, we offer a full suite of consulting solutions tailored to guide individuals, entrepreneurs, and enterprises through every stage of their journey—from inception to expansion. Our expertise spans business, finance, law, and strategy, ensuring that your vision is backed by insight, structure, and execution."
+                data-es="En Carmenati LLC, ofrecemos una gama completa de soluciones de consultoría diseñadas para guiar a individuos, emprendedores y empresas en cada etapa de su trayectoria, desde el inicio hasta la expansión. Nuestra experiencia abarca negocios, finanzas, derecho y estrategia, asegurando que su visión esté respaldada por conocimiento, estructura y ejecución.">
+                 At Carmenati LLC, we offer a full suite of consulting solutions tailored to guide individuals, entrepreneurs, and enterprises through every stage of their journey—from inception to expansion. Our expertise spans business, finance, law, and strategy, ensuring that your vision is backed by insight, structure, and execution.
+             </p>
+        </section>
 
-        <div class="service" id="financial-services">
-            <h2>2. Financial Services</h2>
-            <ul>
-                <li>Financial planning and budgeting</li>
-                <li>Cash flow management</li>
-                <li>Financial forecasting and analysis</li>
-                <li>Debt restructuring and consolidation</li>
-            </ul>
-        </div>
+        <section class="services-grid-container">
+            <div class="services-grid">
 
-        <div class="service" id="credit-management">
-            <h2>3. Credit Management</h2>
-            <ul>
-                <li>Credit assessment and improvement strategies</li>
-                <li>Debt negotiation and settlement</li>
-                <li>Credit repair and monitoring services</li>
-            </ul>
-        </div>
+                <div class="service-card" id="company-formation-card">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3 data-en="Company Formation" data-es="Creación de Empresas">Company Formation</h3>
+                    <p data-en="Starting a business is more than paperwork—it’s laying the foundation for your legacy. We help you choose the right structure (LLC, Corporation, Partnership, etc.), file the proper documentation, navigate local, state, and federal regulations, and secure all required licenses and permits so you can launch with confidence."
+                       data-es="Iniciar un negocio es más que papeleo: es sentar las bases de su legado. Le ayudamos a elegir la estructura adecuada (LLC, Corporación, Sociedad, etc.), presentar la documentación correcta, navegar por las regulaciones locales, estatales y federales, y obtener todas las licencias y permisos necesarios para que pueda lanzarse con confianza.">
+                       Starting a business is more than paperwork—it’s laying the foundation for your legacy. We help you choose the right structure (LLC, Corporation, Partnership, etc.), file the proper documentation, navigate local, state, and federal regulations, and secure all required licenses and permits so you can launch with confidence.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>4. Legal Services</h2>
-            <ul>
-                <li>Contract drafting and review</li>
-                <li>Corporate governance and compliance</li>
-                <li>Dispute resolution and mediation</li>
-                <li>Intellectual property protection</li>
-            </ul>
-        </div>
+                <div class="service-card" id="financial-services-card">
+                     <i class="fas fa-chart-line service-icon"></i>
+                    <h3 data-en="Financial Services" data-es="Servicios Financieros">Financial Services</h3>
+                    <p data-en="From startups to scaling firms, financial clarity is everything. We offer tailored budgeting, financial forecasting, cash flow optimization, and debt restructuring to keep your business solvent, strategic, and prepared for growth."
+                       data-es="Desde startups hasta empresas en expansión, la claridad financiera lo es todo. Ofrecemos presupuestos personalizados, pronósticos financieros, optimización del flujo de efectivo y reestructuración de deudas para mantener su negocio solvente, estratégico y preparado para el crecimiento.">
+                       From startups to scaling firms, financial clarity is everything. We offer tailored budgeting, financial forecasting, cash flow optimization, and debt restructuring to keep your business solvent, strategic, and prepared for growth.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>5. Tax Compliance</h2>
-            <ul>
-                <li>Tax planning and preparation</li>
-                <li>IRS audit representation</li>
-                <li>State and federal tax compliance</li>
-                <li>Tax optimization strategies</li>
-            </ul>
-        </div>
+                <div class="service-card" id="credit-management-card">
+                     <i class="fas fa-credit-card service-icon"></i>
+                    <h3 data-en="Credit Management" data-es="Gestión de Crédito">Credit Management</h3>
+                    <p data-en="Whether you’re rebuilding credit or negotiating debt, we deliver customized solutions to assess, repair, and monitor your credit profile—empowering both personal and business financial strength."
+                       data-es="Ya sea que esté reconstruyendo su crédito o negociando deudas, ofrecemos soluciones personalizadas para evaluar, reparar y monitorear su perfil crediticio, potenciando la solidez financiera tanto personal como empresarial.">
+                       Whether you’re rebuilding credit or negotiating debt, we deliver customized solutions to assess, repair, and monitor your credit profile—empowering both personal and business financial strength.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>6. Real Estate Advisory</h2>
-            <ul>
-                <li>Property acquisition and disposal strategies</li>
-                <li>Title restructuring and deed changes</li>
-                <li>Real estate investment analysis</li>
-                <li>Lease negotiation and management</li>
-            </ul>
-        </div>
+                <div class="service-card" id="legal-advisory-card">
+                     <i class="fas fa-gavel service-icon"></i>
+                    <h3 data-en="Legal Advisory" data-es="Asesoría Legal">Legal Advisory</h3>
+                    <p data-en="Our legal consulting ensures your business operates on solid ground. We assist with contract drafting and review, regulatory compliance, dispute resolution, corporate governance, and intellectual property protection—so you’re protected at every turn."
+                       data-es="Nuestra consultoría legal asegura que su negocio opere sobre bases sólidas. Asistimos en la redacción y revisión de contratos, cumplimiento normativo, resolución de disputas, gobierno corporativo y protección de la propiedad intelectual, para que esté protegido en todo momento.">
+                       Our legal consulting ensures your business operates on solid ground. We assist with contract drafting and review, regulatory compliance, dispute resolution, corporate governance, and intellectual property protection—so you’re protected at every turn.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>7. Accounting Services</h2>
-            <ul>
-                <li>Bookkeeping and financial reporting</li>
-                <li>Payroll processing</li>
-                <li>Accounts receivable and payable management</li>
-                <li>Audit preparation and support</li>
-            </ul>
-        </div>
+                <div class="service-card" id="tax-compliance-card">
+                     <i class="fas fa-calculator service-icon"></i>
+                    <h3 data-en="Tax Compliance" data-es="Cumplimiento Fiscal">Tax Compliance</h3>
+                    <p data-en="Tax season doesn’t have to be stressful. We handle tax planning, preparation, and filing at both the state and federal level, offer audit representation, and help implement strategies to legally minimize your tax burden."
+                       data-es="La temporada de impuestos no tiene por qué ser estresante. Manejamos la planificación, preparación y presentación de impuestos a nivel estatal y federal, ofrecemos representación en auditorías y ayudamos a implementar estrategias para minimizar legalmente su carga fiscal.">
+                       Tax season doesn’t have to be stressful. We handle tax planning, preparation, and filing at both the state and federal level, offer audit representation, and help implement strategies to legally minimize your tax burden.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>8. Investment Planning</h2>
-            <ul>
-                <li>Portfolio analysis and diversification</li>
-                <li>Retirement planning</li>
-                <li>Risk assessment and mitigation</li>
-                <li>Wealth management solutions</li>
-            </ul>
-        </div>
+                <div class="service-card" id="real-estate-advisory-card">
+                     <i class="fas fa-home service-icon"></i>
+                    <h3 data-en="Real Estate Advisory" data-es="Asesoría Inmobiliaria">Real Estate Advisory</h3>
+                    <p data-en="Whether acquiring, selling, or restructuring property, we guide you through every phase. From title adjustments and deed changes to investment analysis and lease negotiations, our advisors help you make smart, strategic real estate moves."
+                       data-es="Ya sea adquiriendo, vendiendo o reestructurando propiedades, lo guiamos en cada fase. Desde ajustes de títulos y cambios de escrituras hasta análisis de inversiones y negociaciones de arrendamiento, nuestros asesores le ayudan a tomar decisiones inmobiliarias inteligentes y estratégicas.">
+                       Whether acquiring, selling, or restructuring property, we guide you through every phase. From title adjustments and deed changes to investment analysis and lease negotiations, our advisors help you make smart, strategic real estate moves.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>9. Project Planning</h2>
-            <ul>
-                <li>Project feasibility studies</li>
-                <li>Resource allocation and timeline management</li>
-                <li>Risk management and contingency planning</li>
-                <li>Performance tracking and reporting</li>
-            </ul>
-        </div>
+                <div class="service-card" id="accounting-services-card">
+                     <i class="fas fa-book-open service-icon"></i>
+                    <h3 data-en="Accounting Services" data-es="Servicios de Contabilidad">Accounting Services</h3>
+                    <p data-en="Accurate records are the heartbeat of a healthy business. Our accounting services include meticulous bookkeeping, payroll processing, AR/AP management, and audit preparation—ensuring compliance and financial clarity year-round."
+                       data-es="Los registros precisos son el corazón de un negocio saludable. Nuestros servicios de contabilidad incluyen teneduría de libros meticulosa, procesamiento de nóminas, gestión de cuentas por cobrar/pagar y preparación para auditorías, garantizando el cumplimiento y la claridad financiera durante todo el año.">
+                       Accurate records are the heartbeat of a healthy business. Our accounting services include meticulous bookkeeping, payroll processing, AR/AP management, and audit preparation—ensuring compliance and financial clarity year-round.
+                    </p>
+                </div>
 
-        <div class="service">
-            <h2>10. Additional Services</h2>
-            <ul>
-                <li>Business process optimization</li>
-                <li>Strategic planning and market analysis</li>
-                <li>Mergers and acquisitions support</li>
-                <li>Succession planning</li>
-            </ul>
-        </div>
-    </section>
+                <div class="service-card" id="investment-planning-card">
+                     <i class="fas fa-piggy-bank service-icon"></i>
+                    <h3 data-en="Investment Planning" data-es="Planificación de Inversiones">Investment Planning</h3>
+                    <p data-en="We provide comprehensive wealth and portfolio guidance—from retirement planning and asset diversification to risk mitigation strategies—designed to grow and protect your financial future."
+                       data-es="Brindamos orientación integral sobre patrimonio y carteras, desde planificación para la jubilación y diversificación de activos hasta estrategias de mitigación de riesgos, diseñadas para hacer crecer y proteger su futuro financiero.">
+                       We provide comprehensive wealth and portfolio guidance—from retirement planning and asset diversification to risk mitigation strategies—designed to grow and protect your financial future.
+                    </p>
+                </div>
+
+                <div class="service-card" id="project-planning-card">
+                     <i class="fas fa-tasks service-icon"></i>
+                    <h3 data-en="Project Planning" data-es="Planificación de Proyectos">Project Planning</h3>
+                    <p data-en="Every successful project starts with a plan. We conduct feasibility studies, manage timelines and resources, identify risks, and track performance, so your initiative stays on schedule and delivers measurable results."
+                       data-es="Todo proyecto exitoso comienza con un plan. Realizamos estudios de viabilidad, gestionamos cronogramas y recursos, identificamos riesgos y hacemos seguimiento del rendimiento, para que su iniciativa se mantenga según lo programado y ofrezca resultados medibles.">
+                       Every successful project starts with a plan. We conduct feasibility studies, manage timelines and resources, identify risks, and track performance, so your initiative stays on schedule and delivers measurable results.
+                    </p>
+                </div>
+
+                 <div class="service-card" id="additional-services-card">
+                     <i class="fas fa-cogs service-icon"></i>
+                    <h3 data-en="Additional Services" data-es="Servicios Adicionales">Additional Services</h3>
+                    <p data-en="We go beyond the expected. Our team offers strategic market analysis, process optimization, succession planning, and M&A support—driving long-term value and transformative growth across your enterprise."
+                       data-es="Vamos más allá de lo esperado. Nuestro equipo ofrece análisis estratégico de mercado, optimización de procesos, planificación de sucesión y apoyo en fusiones y adquisiciones, impulsando el valor a largo plazo y el crecimiento transformador en toda su empresa.">
+                       We go beyond the expected. Our team offers strategic market analysis, process optimization, succession planning, and M&A support—driving long-term value and transformative growth across your enterprise.
+                    </p>
+                </div>
+
+                <div class="service-card" id="immigration-services-card">
+                    <i class="fas fa-passport service-icon"></i>
+                    <h3 data-en="Immigration Services" data-es="Servicios de Inmigración">Immigration Services</h3>
+                    <p data-en="We provide comprehensive immigration services, including assistance with visa applications, green card filings, citizenship processes, and other legal documentation. Our expert team guides you through paperwork, ensures accurate filings, and offers personalized support to navigate complex immigration procedures efficiently."
+                       data-es="Ofrecemos servicios integrales de inmigración, incluida la asistencia con solicitudes de visa, presentaciones de tarjeta verde (green card), procesos de ciudadanía y otra documentación legal. Nuestro equipo experto lo guía a través del papeleo, garantiza presentaciones precisas y ofrece apoyo personalizado para navegar eficientemente los complejos procedimientos de inmigración.">
+                       We provide comprehensive immigration services, including assistance with visa applications, green card filings, citizenship processes, and other legal documentation. Our expert team guides you through paperwork, ensures accurate filings, and offers personalized support to navigate complex immigration procedures efficiently.
+                    </p>
+                </div>
+
+                <div class="service-card" id="notary-services-card">
+                     <i class="fas fa-stamp service-icon"></i>
+                    <h3 data-en="Notary Public Services" data-es="Servicios de Notario Público">Notary Public Services</h3>
+                    <p data-en="Reliable notarization for legal documents, contracts, affidavits, and more. Ensuring authenticity and compliance for your important paperwork."
+                       data-es="Notarización confiable para documentos legales, contratos, declaraciones juradas y más. Asegurando autenticidad y cumplimiento para su papeleo importante.">
+                       Reliable notarization for legal documents, contracts, affidavits, and more. Ensuring authenticity and compliance for your important paperwork.
+                    </p>
+                </div>
+
+            </div> </section> </main>
 
     <footer>
         <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
