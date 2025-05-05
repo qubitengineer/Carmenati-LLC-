@@ -4,58 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Carmenati LLC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
+    <nav class="navbar">
+         <div class="navbar-content">
             <div class="logo">Carmenati LLC</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                 <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
+                    <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a href="services.html#company-formation">Company Formation</a></li>
-                        <li><a href="services.html#financial-services">Financial Services</a></li>
-                        <li><a href="services.html#credit-management">Credit Management</a></li>
+                        <li><a href="services.html#company-formation-card" data-en="Company Formation" data-es="Creación de Empresas">Company Formation</a></li>
+                        <li><a href="services.html#financial-services-card" data-en="Financial Services" data-es="Servicios Financieros">Financial Services</a></li>
+                        <li><a href="services.html#credit-management-card" data-en="Credit Management" data-es="Gestión de Crédito">Credit Management</a></li>
+                        <li><a href="services.html#legal-advisory-card" data-en="Legal Advisory" data-es="Asesoría Legal">Legal Advisory</a></li>
+                        <li><a href="services.html#tax-compliance-card" data-en="Tax Compliance" data-es="Cumplimiento Fiscal">Tax Compliance</a></li>
+                        <li><a href="services.html#real-estate-advisory-card" data-en="Real Estate Advisory" data-es="Asesoría Inmobiliaria">Real Estate Advisory</a></li>
+                        <li><a href="services.html#accounting-services-card" data-en="Accounting Services" data-es="Servicios de Contabilidad">Accounting Services</a></li>
+                        <li><a href="services.html#investment-planning-card" data-en="Investment Planning" data-es="Planificación de Inversiones">Investment Planning</a></li>
+                        <li><a href="services.html#project-planning-card" data-en="Project Planning" data-es="Planificación de Proyectos">Project Planning</a></li>
+                        <li><a href="services.html#additional-services-card" data-en="Additional Services" data-es="Servicios Adicionales">Additional Services</a></li>
+                        <li><a href="services.html#immigration-services-card" data-en="Immigration Services" data-es="Servicios de Inmigración">Immigration Services</a></li>
+                        <li><a href="services.html#notary-services-card" data-en="Notary Public Services" data-es="Servicios de Notario Público">Notary Public Services</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="active" data-en="Contact" data-es="Contacto">Contact</a></li>
                 <li><button id="lang-toggle">ES</button></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="hero-content fade-in">
             <h1 data-en="Contact Us" data-es="Contáctenos">Contact Us</h1>
         </div>
     </header>
 
-    <section class="upload-section slide-up">
-        <h2 data-en="Get in Touch" data-es="Póngase en contacto">Get in Touch</h2>
+    <main>
+        <section class="contact-section slide-up" style="padding: 60px 20px; max-width: 800px; margin: 40px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <h2 data-en="Get in Touch" data-es="Póngase en contacto" style="text-align: center; margin-bottom: 40px;">Get in Touch</h2>
 
-        <div class="service">
-            <h3 data-en="David Carmenate" data-es="David Carmenate">David Carmenate</h3>
-            <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615028541">561-502-8541</a></p>
-            <p><strong>Email</strong>: <a href="mailto:davidmagdel@gmail.com">davidmagdel@gmail.com</a></p>
-        </div>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+                <div class="contact-card" style="text-align: center; padding: 20px; flex-basis: 45%;">
+                    <h3 data-en="David Carmenate" data-es="David Carmenate">David Carmenate</h3>
+                    <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615028541">561-502-8541</a></p>
+                    <p><strong>Email</strong>: <a href="mailto:davidmagdel@gmail.com">davidmagdel@gmail.com</a></p>
+                </div>
 
-        <div class="service">
-            <h3 data-en="Magdel Carmenate" data-es="Magdel Carmenate">Magdel Carmenate</h3>
-            <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615020069">561-502-0069</a></p>
-            <p><strong>Email</strong>: <a href="mailto:daniel980322.mc@gmail.com">daniel980322.mc@gmail.com</a></p>
-        </div>
+                <div class="contact-card" style="text-align: center; padding: 20px; flex-basis: 45%;">
+                    <h3 data-en="Magdel Carmenate" data-es="Magdel Carmenate">Magdel Carmenate</h3>
+                    <p><strong data-en="Phone" data-es="Teléfono">Phone</strong>: <a href="tel:+15615020069">561-502-0069</a></p>
+                    <p><strong>Email</strong>: <a href="mailto:daniel980322.mc@gmail.com">daniel980322.mc@gmail.com</a></p>
+                </div>
+            </div>
 
-        <h3 data-en="Upload a File" data-es="Subir un archivo">Upload a File</h3>
-        <p data-en="Send us relevant documents securely." data-es="Envíenos documentos relevantes de forma segura.">Send us relevant documents securely.</p>
-        <input type="file" id="upload-input">
-        <div id="upload-preview"></div>
-    </section>
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+             <p style="text-align:center; color: #555;" data-en="We look forward to hearing from you." data-es="Esperamos tener noticias suyas.">We look forward to hearing from you.</p>
+
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
