@@ -4,49 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carmenati LLC | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
+    <nav class="navbar">
+         <div class="navbar-content">
             <div class="logo">Carmenati LLC</div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" class="active" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
+                    <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a href="services.html#company-formation">Company Formation</a></li>
-                        <li><a href="services.html#financial-services">Financial Services</a></li>
-                        <li><a href="services.html#credit-management">Credit Management</a></li>
+                        <li><a href="services.html#company-formation-card" data-en="Company Formation" data-es="Creación de Empresas">Company Formation</a></li>
+                        <li><a href="services.html#financial-services-card" data-en="Financial Services" data-es="Servicios Financieros">Financial Services</a></li>
+                        <li><a href="services.html#credit-management-card" data-en="Credit Management" data-es="Gestión de Crédito">Credit Management</a></li>
+                        <li><a href="services.html#legal-advisory-card" data-en="Legal Advisory" data-es="Asesoría Legal">Legal Advisory</a></li>
+                        <li><a href="services.html#tax-compliance-card" data-en="Tax Compliance" data-es="Cumplimiento Fiscal">Tax Compliance</a></li>
+                        <li><a href="services.html#real-estate-advisory-card" data-en="Real Estate Advisory" data-es="Asesoría Inmobiliaria">Real Estate Advisory</a></li>
+                        <li><a href="services.html#accounting-services-card" data-en="Accounting Services" data-es="Servicios de Contabilidad">Accounting Services</a></li>
+                        <li><a href="services.html#investment-planning-card" data-en="Investment Planning" data-es="Planificación de Inversiones">Investment Planning</a></li>
+                        <li><a href="services.html#project-planning-card" data-en="Project Planning" data-es="Planificación de Proyectos">Project Planning</a></li>
+                        <li><a href="services.html#additional-services-card" data-en="Additional Services" data-es="Servicios Adicionales">Additional Services</a></li>
+                        <li><a href="services.html#immigration-services-card" data-en="Immigration Services" data-es="Servicios de Inmigración">Immigration Services</a></li>
+                        <li><a href="services.html#notary-services-card" data-en="Notary Public Services" data-es="Servicios de Notario Público">Notary Public Services</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <button id="lang-toggle">ES</button>
-                </li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
+                <li><button id="lang-toggle">ES</button></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero home-hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content fade-in">
-            <h1>Carmenati LLC</h1>
-            <p>Business Consulting Reimagined. Bilingual. Bold. Built for You.</p>
-            <a href="services.html" class="cta-button">Explore Services</a>
+            <h1 data-en="Carmenati LLC" data-es="Carmenati LLC">Carmenati LLC</h1>
+            <p data-en="Driving bold solutions for clients who demand excellence—partnering with visionaries to solve complex challenges, unlock opportunity, and lead with impact."
+               data-es="Impulsando soluciones audaces para clientes que exigen excelencia—asociándonos con visionarios para resolver desafíos complejos, desbloquear oportunidades y liderar con impacto.">
+                Driving bold solutions for clients who demand excellence—partnering with visionaries to solve complex challenges, unlock opportunity, and lead with impact.
+            </p>
+            <a href="services.html" class="cta-button hero-cta" data-en="Explore Services" data-es="Explorar Servicios">Explore Services</a>
         </div>
     </header>
 
-    <section class="upload-section slide-up">
-        <h2>Upload a Document</h2>
-        <p>Securely send us your business documents or case files.</p>
-        <input type="file" id="upload-input">
-        <div id="upload-preview"></div>
-    </section>
+    <main>
+        <section class="key-services-section slide-up">
+            <h2 class="section-title" data-en="Core Expertise" data-es="Áreas de Especialización">Core Expertise</h2>
+            <div class="key-services-container">
+                <div class="service-highlight-card">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3 data-en="Company Formation" data-es="Creación de Empresas">Company Formation</h3>
+                    <p data-en="Launch confidently with expert guidance on structure, registration, and compliance."
+                       data-es="Láncese con confianza con orientación experta sobre estructura, registro y cumplimiento.">
+                       Launch confidently with expert guidance on structure, registration, and compliance.</p>
+                    <a href="services.html#company-formation-card" class="learn-more-link" data-en="Learn More" data-es="Saber Más">Learn More &rarr;</a>
+                </div>
+                <div class="service-highlight-card">
+                     <i class="fas fa-chart-line service-icon"></i>
+                    <h3 data-en="Financial Services" data-es="Servicios Financieros">Financial Services</h3>
+                    <p data-en="Strategic financial planning, forecasting, and cash flow optimization for growth."
+                       data-es="Planificación financiera estratégica, pronósticos y optimización del flujo de efectivo para el crecimiento.">
+                       Strategic financial planning, forecasting, and cash flow optimization for growth.</p>
+                     <a href="services.html#financial-services-card" class="learn-more-link" data-en="Learn More" data-es="Saber Más">Learn More &rarr;</a>
+                </div>
+                <div class="service-highlight-card">
+                    <i class="fas fa-balance-scale service-icon"></i>
+                    <h3 data-en="Legal & Tax Advisory" data-es="Asesoría Legal y Fiscal">Legal & Tax Advisory</h3>
+                    <p data-en="Navigate complex legal landscapes and minimize tax burdens with confidence."
+                       data-es="Navegue por panoramas legales complejos y minimice las cargas fiscales con confianza.">
+                       Navigate complex legal landscapes and minimize tax burdens with confidence.</p>
+                    <a href="services.html#legal-advisory-card" class="learn-more-link" data-en="Learn More" data-es="Saber Más">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-snippet-section slide-up">
+            <div class="about-snippet-content">
+                <h2 class="section-title" data-en="Your Strategic Partners" data-es="Sus Socios Estratégicos">Your Strategic Partners</h2>
+                <p data-en="Led by David and Magdel Carmenate, we blend intellectual rigor with practical execution. Our bilingual, client-first approach ensures personalized solutions grounded in deep expertise and a commitment to measurable results."
+                   data-es="Dirigidos por David y Magdel Carmenate, combinamos el rigor intelectual con la ejecución práctica. Nuestro enfoque bilingüe y centrado en el cliente garantiza soluciones personalizadas basadas en una profunda experiencia y un compromiso con resultados medibles.">
+                   Led by David and Magdel Carmenate, we blend intellectual rigor with practical execution. Our bilingual, client-first approach ensures personalized solutions grounded in deep expertise and a commitment to measurable results.
+                </p>
+                <a href="about.html" class="cta-button" data-en="Meet Our Team" data-es="Conozca a Nuestro Equipo">Meet Our Team</a>
+            </div>
+        </section>
+
+        <section class="final-cta-section slide-up">
+             <h2 data-en="Ready to Achieve Your Goals?" data-es="¿Listo para Alcanzar sus Metas?">Ready to Achieve Your Goals?</h2>
+             <p data-en="Let's discuss how Carmenati LLC can help you navigate challenges and unlock opportunities."
+                data-es="Discutamos cómo Carmenati LLC puede ayudarle a navegar desafíos y desbloquear oportunidades.">
+                 Let's discuss how Carmenati LLC can help you navigate challenges and unlock opportunities.
+             </p>
+             <a href="contact.html" class="cta-button" data-en="Schedule a Consultation" data-es="Agendar una Consulta">Schedule a Consultation</a>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
