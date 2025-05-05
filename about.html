@@ -4,62 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Carmenati LLC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
+    <nav class="navbar">
+         <div class="navbar-content">
             <div class="logo">Carmenati LLC</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                 <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="about.html" class="active" data-en="About" data-es="Sobre Nosotros">About</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
+                    <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a href="services.html#company-formation">Company Formation</a></li>
-                        <li><a href="services.html#financial-services">Financial Services</a></li>
-                        <li><a href="services.html#credit-management">Credit Management</a></li>
+                        <li><a href="services.html#company-formation-card" data-en="Company Formation" data-es="Creación de Empresas">Company Formation</a></li>
+                        <li><a href="services.html#financial-services-card" data-en="Financial Services" data-es="Servicios Financieros">Financial Services</a></li>
+                        <li><a href="services.html#credit-management-card" data-en="Credit Management" data-es="Gestión de Crédito">Credit Management</a></li>
+                        <li><a href="services.html#legal-advisory-card" data-en="Legal Advisory" data-es="Asesoría Legal">Legal Advisory</a></li>
+                        <li><a href="services.html#tax-compliance-card" data-en="Tax Compliance" data-es="Cumplimiento Fiscal">Tax Compliance</a></li>
+                        <li><a href="services.html#real-estate-advisory-card" data-en="Real Estate Advisory" data-es="Asesoría Inmobiliaria">Real Estate Advisory</a></li>
+                        <li><a href="services.html#accounting-services-card" data-en="Accounting Services" data-es="Servicios de Contabilidad">Accounting Services</a></li>
+                        <li><a href="services.html#investment-planning-card" data-en="Investment Planning" data-es="Planificación de Inversiones">Investment Planning</a></li>
+                        <li><a href="services.html#project-planning-card" data-en="Project Planning" data-es="Planificación de Proyectos">Project Planning</a></li>
+                        <li><a href="services.html#additional-services-card" data-en="Additional Services" data-es="Servicios Adicionales">Additional Services</a></li>
+                        <li><a href="services.html#immigration-services-card" data-en="Immigration Services" data-es="Servicios de Inmigración">Immigration Services</a></li>
+                        <li><a href="services.html#notary-services-card" data-en="Notary Public Services" data-es="Servicios de Notario Público">Notary Public Services</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
                 <li><button id="lang-toggle">ES</button></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="hero-content fade-in">
             <h1 data-en="About Carmenati LLC" data-es="Sobre Carmenati LLC">About Carmenati LLC</h1>
         </div>
     </header>
 
-    <section class="upload-section slide-up">
-        <h2 data-en="Founders" data-es="Fundadores">Founders</h2>
-        <p data-en="Carmenati LLC was founded by David Carmenate and Magdel Carmenate, two Cuban-born professionals with diverse and complementary backgrounds."
-           data-es="Carmenati LLC fue fundada por David Carmenate y Magdel Carmenate, dos profesionales nacidos en Cuba con trayectorias diversas y complementarias.">
-            Carmenati LLC was founded by David Carmenate and Magdel Carmenate, two Cuban-born professionals with diverse and complementary backgrounds.
-        </p>
+    <main>
+        <section class="about-content slide-up" style="text-align: left; max-width: 800px; margin: 40px auto; padding: 40px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <h2 data-en="Our Partners" data-es="Nuestros Socios" style="text-align: center; margin-bottom: 30px;">Our Partners</h2>
 
-        <h3 data-en="David Carmenate" data-es="David Carmenate">David Carmenate</h3>
-        <p data-en="David holds a dual Bachelor’s degree in Philosophy and Economics. With extensive research experience in finance and legal topics, he brings analytical rigor and strategic insight to the firm's operations."
-           data-es="David tiene una doble licenciatura en Filosofía y Economía. Con amplia experiencia en investigación financiera y legal, aporta rigor analítico y visión estratégica a las operaciones de la firma.">
-            David holds a dual Bachelor’s degree in Philosophy and Economics. With extensive research experience in finance and legal topics, he brings analytical rigor and strategic insight to the firm's operations.
-        </p>
+            <p data-en="Carmenati LLC is led by Partners David Carmenate and Magdel Carmenate, two Cuban-born professionals whose combined expertise and shared values drive the firm’s mission: to deliver clear, strategic, and results-oriented consulting solutions. As Partners, they oversee all aspects of the firm’s operations—ensuring each client engagement is grounded in analytical precision, operational integrity, and a deep understanding of institutional complexity."
+               data-es="Carmenati LLC está dirigida por los Socios David Carmenate y Magdel Carmenate, dos profesionales nacidos en Cuba cuya experiencia combinada y valores compartidos impulsan la misión de la firma: ofrecer soluciones de consultoría claras, estratégicas y orientadas a resultados. Como Socios, supervisan todos los aspectos de las operaciones de la firma, asegurando que cada compromiso con el cliente se base en la precisión analítica, la integridad operativa y una profunda comprensión de la complejidad institucional."
+               style="margin-bottom: 25px; line-height: 1.6;">
+                Carmenati LLC is led by Partners David Carmenate and Magdel Carmenate, two Cuban-born professionals whose combined expertise and shared values drive the firm’s mission: to deliver clear, strategic, and results-oriented consulting solutions. As Partners, they oversee all aspects of the firm’s operations—ensuring each client engagement is grounded in analytical precision, operational integrity, and a deep understanding of institutional complexity.
+            </p>
 
-        <h3 data-en="Magdel Carmenate" data-es="Magdel Carmenate">Magdel Carmenate</h3>
-        <p data-en="Magdel is a Political Scientist with a strong background in customer service. Her interpersonal skills and client-first mindset ensure that Carmenati LLC delivers human-centered consulting solutions."
-           data-es="Magdel es una politóloga con una sólida experiencia en atención al cliente. Sus habilidades interpersonales y enfoque en el cliente garantizan que Carmenati LLC ofrezca soluciones de consultoría centradas en las personas.">
-            Magdel is a Political Scientist with a strong background in customer service. Her interpersonal skills and client-first mindset ensure that Carmenati LLC delivers human-centered consulting solutions.
-        </p>
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
 
-        <p data-en="Both founders previously worked at a law firm for over a year, having handled hundreds of cases together. They are both bilingual and share a commitment to serving diverse communities."
-           data-es="Ambos fundadores trabajaron previamente en un bufete de abogados durante más de un año, habiendo manejado cientos de casos juntos. Ambos son bilingües y comparten un compromiso con el servicio a comunidades diversas.">
-            Both founders previously worked at a law firm for over a year, having handled hundreds of cases together. They are both bilingual and share a commitment to serving diverse communities.
-        </p>
-    </section>
+            <h3 data-en="David Carmenate" data-es="David Carmenate" style="margin-bottom: 5px;">David Carmenate</h3>
+            <h4 data-en="Partner | Strategy & Research" data-es="Socio | Estrategia e Investigación" style="margin-top: 0; margin-bottom: 15px; color: #555; font-weight: normal;">Partner | Strategy & Research</h4>
+            <p data-en="David serves as the firm’s strategic lead, bringing a powerful intellectual foundation to every engagement. Holding dual degrees in Philosophy and Economics, he specializes in bridging theoretical rigor with real-world application. His areas of expertise include financial analysis, legal-economic frameworks, and regulatory strategy, shaped by both academic research and frontline experience."
+               data-es="David actúa como el líder estratégico de la firma, aportando una sólida base intelectual a cada compromiso. Con doble titulación en Filosofía y Economía, se especializa en tender puentes entre el rigor teórico y la aplicación en el mundo real. Sus áreas de especialización incluyen análisis financiero, marcos jurídico-económicos y estrategia regulatoria, moldeadas tanto por la investigación académica como por la experiencia de primera línea."
+               style="margin-bottom: 15px; line-height: 1.6;">
+                David serves as the firm’s strategic lead, bringing a powerful intellectual foundation to every engagement. Holding dual degrees in Philosophy and Economics, he specializes in bridging theoretical rigor with real-world application. His areas of expertise include financial analysis, legal-economic frameworks, and regulatory strategy, shaped by both academic research and frontline experience.
+            </p>
+            <p data-en="Prior to co-founding Carmenati LLC, David worked in a high-volume legal environment, managing hundreds of cases and developing a robust understanding of procedural dynamics and institutional systems. His strategic insight, critical thinking, and bilingual capabilities position him as a trusted advisor to clients navigating complex decision-making landscapes."
+               data-es="Antes de cofundar Carmenati LLC, David trabajó en un entorno legal de gran volumen, gestionando cientos de casos y desarrollando una sólida comprensión de la dinámica procesal y los sistemas institucionales. Su visión estratégica, pensamiento crítico y capacidades bilingües lo posicionan como un asesor de confianza para clientes que navegan por complejos escenarios de toma de decisiones."
+               style="margin-bottom: 25px; line-height: 1.6;">
+                Prior to co-founding Carmenati LLC, David worked in a high-volume legal environment, managing hundreds of cases and developing a robust understanding of procedural dynamics and institutional systems. His strategic insight, critical thinking, and bilingual capabilities position him as a trusted advisor to clients navigating complex decision-making landscapes.
+            </p>
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h3 data-en="Magdel Carmenate" data-es="Magdel Carmenate" style="margin-bottom: 5px;">Magdel Carmenate</h3>
+             <h4 data-en="Partner | Client Services & Operations" data-es="Socio | Servicios al Cliente y Operaciones" style="margin-top: 0; margin-bottom: 15px; color: #555; font-weight: normal;">Partner | Client Services & Operations</h4>
+            <p data-en="Magdel leads the firm’s client services and operational execution. A trained Political Scientist, he brings a disciplined, people-focused approach to consulting—ensuring that strategies are not only sound on paper, but executable in practice. His background in both law and customer-facing roles gives him a unique ability to manage client relationships, streamline processes, and deliver consistent results."
+               data-es="Magdel lidera los servicios al cliente y la ejecución operativa de la firma. Como politólogo de formación, aporta un enfoque disciplinado y centrado en las personas a la consultoría, asegurando que las estrategias no solo sean sólidas en teoría, sino también ejecutables en la práctica. Su experiencia tanto en derecho como en roles de atención al cliente le otorga una habilidad única para gestionar las relaciones con los clientes, optimizar procesos y entregar resultados consistentes."
+               style="margin-bottom: 15px; line-height: 1.6;">
+                Magdel leads the firm’s client services and operational execution. A trained Political Scientist, he brings a disciplined, people-focused approach to consulting—ensuring that strategies are not only sound on paper, but executable in practice. His background in both law and customer-facing roles gives him a unique ability to manage client relationships, streamline processes, and deliver consistent results.
+            </p>
+            <p data-en="Magdel’s leadership is marked by a pragmatic mindset, strong communication skills, and deep empathy for client needs. Fluent in English and Spanish, he plays a key role in shaping the firm’s bilingual service offerings and building long-term relationships across diverse communities."
+               data-es="El liderazgo de Magdel se caracteriza por una mentalidad pragmática, sólidas habilidades de comunicación y una profunda empatía por las necesidades del cliente. Bilingüe en inglés y español, juega un papel clave en la configuración de las ofertas de servicios bilingües de la firma y en la construcción de relaciones a largo plazo en diversas comunidades."
+               style="margin-bottom: 25px; line-height: 1.6;">
+                Magdel’s leadership is marked by a pragmatic mindset, strong communication skills, and deep empathy for client needs. Fluent in English and Spanish, he plays a key role in shaping the firm’s bilingual service offerings and building long-term relationships across diverse communities.
+            </p>
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+            <p data-en="Together, Partners David and Magdel Carmenate bring a rare blend of intellectual depth, professional experience, and cultural fluency to Carmenati LLC. Their leadership reflects a shared commitment to principled strategy, personalized service, and delivering measurable value in every engagement."
+               data-es="Juntos, los Socios David y Magdel Carmenate aportan una rara combinación de profundidad intelectual, experiencia profesional y fluidez cultural a Carmenati LLC. Su liderazgo refleja un compromiso compartido con la estrategia basada en principios, el servicio personalizado y la entrega de valor medible en cada compromiso."
+               style="margin-bottom: 15px; line-height: 1.6; font-style: italic; text-align: center;">
+                Together, Partners David and Magdel Carmenate bring a rare blend of intellectual depth, professional experience, and cultural fluency to Carmenati LLC. Their leadership reflects a shared commitment to principled strategy, personalized service, and delivering measurable value in every engagement.
+            </p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Carmenati LLC. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
